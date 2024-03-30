@@ -8,5 +8,5 @@ Speed and temperature related dashboard for Teslamate
 
 # Dashboard screenshot
 
-![Speed, temperature, consumption](https://github.com/tero-jarvinen/teslamate-speed-temperature/blob/main/images/speed-temperature-consumption.png?raw=true)
+![Speed, temperature, consumption](https://github.com/tero-jarvinen/teslamate-speed-temperature/blob/main/images/speed-temperature-consumption.jpg?raw=true)
 
