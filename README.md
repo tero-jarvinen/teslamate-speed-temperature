@@ -3,7 +3,8 @@ Speed and temperature related dashboard for Teslamate
 
 # Selectable attributes
 
- - car_id: Select car if multiple cars owned
+ - Time range: Select time range for panel data 
+ - Car_id: Select car if multiple cars owned
  - Used datapoints: percentage of position datapoints used for panel data. Higher percentage means slower performance but more accurate data.
 
 # Dashboard screenshot
