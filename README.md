@@ -1,5 +1,5 @@
 # Speed and outside temperature related metrics for Teslamate
-Speed and temperature related dashboard for Teslamate
+Speed and temperature related dashboard for Teslamate. Separate dashboards for kilometers and miles, select the one you want to use.
 
 # Selectable attributes
 
