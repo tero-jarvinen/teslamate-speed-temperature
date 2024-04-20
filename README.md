@@ -6,6 +6,8 @@ Speed and temperature related dashboard for Teslamate. Separate dashboards for k
  - Time range: Select time range for panel data 
  - Car_id: Select car if multiple cars owned
  - Used datapoints: percentage of position datapoints used for panel data. Higher percentage means slower performance but more accurate data.
+ - Speed step: Speed step size for the panels
+ - Temperature step: Temperature step size for the panels
 
 # Dashboard screenshot
 
