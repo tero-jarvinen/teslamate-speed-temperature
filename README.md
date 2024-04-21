@@ -3,7 +3,7 @@ Speed and temperature related dashboard for Teslamate. Separate dashboards for k
 
 # Installation
 
-Download correct json file (km or miles). Go to Teslamate Grafana and select Dashboards. On dashboard views click New / Import and import the file you downloaded. Select folder and Teslamate datasource in import dialog.
+Download correct json file (km or miles). Go to Teslamate Grafana and select Dashboards. On dashboard view click New / Import and import the file you downloaded. Select folder and Teslamate datasource in import dialog.
 
 # Selectable dashboard attributes
 
