@@ -2077,7 +2077,9 @@
   "refresh": "",
   "schemaVersion": 38,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "tesla"
+  ],
   "templating": {
     "list": [
       {
@@ -2251,6 +2253,6 @@
   "timezone": "",
   "title": "Speed and temperature",
   "uid": "d9fd88d7-d950-4892-8d03-c82fe7fb59e5",
-  "version": 34,
+  "version": 36,
   "weekStart": ""
 }
