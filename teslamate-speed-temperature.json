@@ -79,7 +79,7 @@
         "y": 0
       },
       "id": 20,
-      "title": "Speed and temperature statistics",
+      "title": "Speed and temperature statistics (miles)",
       "type": "row"
     },
     {
@@ -101,7 +101,7 @@
             "inspect": false,
             "width": 65
           },
-          "decimals": 1,
+          "decimals": 0,
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -112,83 +112,79 @@
               },
               {
                 "color": "#399e2f",
-                "value": 5
+                "value": 80
               },
               {
                 "color": "#4d9e28",
-                "value": 11
+                "value": 176
               },
               {
                 "color": "#5d9e21",
-                "value": 12
+                "value": 193
               },
               {
                 "color": "#6b9d1a",
-                "value": 13
+                "value": 209
               },
               {
                 "color": "#799d15",
-                "value": 14
+                "value": 225
               },
               {
                 "color": "#859c12",
-                "value": 15
+                "value": 241
               },
               {
                 "color": "#919a10",
-                "value": 16
+                "value": 257
               },
               {
                 "color": "#9c9a12",
-                "value": 17
+                "value": 273
               },
               {
                 "color": "#a08b00",
-                "value": 18
+                "value": 289
               },
               {
                 "color": "#a27c00",
-                "value": 19
+                "value": 305
               },
               {
                 "color": "#a46c00",
-                "value": 20
+                "value": 321
               },
               {
                 "color": "#a45c00",
-                "value": 21
+                "value": 337
               },
               {
                 "color": "#a34b00",
-                "value": 22
+                "value": 353
               },
               {
                 "color": "#a13908",
-                "value": 23
+                "value": 370
               },
               {
                 "color": "#9d2312",
-                "value": 24
+                "value": 390
               },
               {
                 "color": "#9d0223",
-                "value": 26
+                "value": 415
               },
               {
                 "color": "#990032",
-                "value": 28
+                "value": 450
               },
               {
                 "color": "#8f003f",
-                "value": 32
-              },
-              {
-                "color": "#85004a",
-                "value": 40
+                "value": 520
               },
               {
                 "color": "#7a0056",
-                "value": 50
+                "value": 800
               }
             ]
           },
@@ -234,7 +230,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "velocitykmh"
+                "value": "velocitymph"
               },
               {
                 "id": "decimals",
@@ -245,7 +241,7 @@
         ]
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 12,
         "x": 0,
         "y": 1
@@ -340,75 +336,75 @@
               },
               {
                 "color": "#85004a",
-                "value": 140
+                "value": 90
               },
               {
                 "color": "#8f003f",
-                "value": 175
+                "value": 108
               },
               {
                 "color": "#990032",
-                "value": 200
+                "value": 124
               },
               {
                 "color": "#9d0223",
-                "value": 215
+                "value": 134
               },
               {
                 "color": "#9d2312",
-                "value": 230
+                "value": 143
               },
               {
                 "color": "#a13908",
-                "value": 245
+                "value": 152
               },
               {
                 "color": "#a34b00",
-                "value": 255
+                "value": 158
               },
               {
                 "color": "#a45c00",
-                "value": 265
+                "value": 163
               },
               {
                 "color": "#a46c00",
-                "value": 280
+                "value": 174
               },
               {
                 "color": "#a27c00",
-                "value": 295
+                "value": 183
               },
               {
                 "color": "#a08b00",
-                "value": 310
+                "value": 193
               },
               {
                 "color": "#9c9a12",
-                "value": 330
+                "value": 206
               },
               {
                 "color": "#919a10",
-                "value": 350
+                "value": 218
               },
               {
                 "color": "#859c12",
-                "value": 370
+                "value": 231
               },
               {
                 "color": "#799d15",
-                "value": 400
+                "value": 249
               },
               {
                 "color": "#6b9d1a",
-                "value": 430
+                "value": 267
               },
               {
                 "color": "#5d9e21",
-                "value": 470
+                "value": 292
               },
               {
                 "color": "#4d9e28",
-                "value": 510
+                "value": 317
               },
               {
                 "color": "#399e2f",
@@ -458,14 +454,14 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "velocitykmh"
+                "value": "velocitymph"
               }
             ]
           }
         ]
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 12,
         "x": 12,
         "y": 1
@@ -686,7 +682,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "velocitykmh"
+                "value": "velocitymph"
               },
               {
                 "id": "decimals",
@@ -697,10 +693,10 @@
         ]
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 12,
         "x": 0,
-        "y": 16
+        "y": 13
       },
       "id": 24,
       "options": {
@@ -774,7 +770,7 @@
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMax": 30,
+            "axisSoftMax": 500,
             "fillOpacity": 100,
             "gradientMode": "none",
             "hideFrom": {
@@ -880,17 +876,17 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "kwatth"
+                "value": "watth"
               }
             ]
           }
         ]
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 6,
         "x": 12,
-        "y": 16
+        "y": 13
       },
       "id": 16,
       "options": {
@@ -1021,7 +1017,7 @@
           },
           "decimals": 0,
           "mappings": [],
-          "max": 600,
+          "max": 400,
           "min": 0,
           "thresholds": {
             "mode": "absolute",
@@ -1095,7 +1091,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "lengthkm"
+                "value": "lengthmi"
               }
             ]
           },
@@ -1114,10 +1110,10 @@
         ]
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 6,
         "x": 18,
-        "y": 16
+        "y": 13
       },
       "id": 22,
       "options": {
@@ -1211,7 +1207,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 31
+        "y": 25
       },
       "id": 19,
       "panels": [],
@@ -1348,7 +1344,7 @@
         "h": 8,
         "w": 10,
         "x": 0,
-        "y": 32
+        "y": 26
       },
       "id": 14,
       "options": {
@@ -1474,7 +1470,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "velocitykmh"
+                "value": "velocitymph"
               }
             ]
           },
@@ -1496,7 +1492,7 @@
         "h": 8,
         "w": 14,
         "x": 10,
-        "y": 32
+        "y": 26
       },
       "id": 11,
       "options": {
@@ -1564,7 +1560,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 40
+        "y": 34
       },
       "id": 21,
       "panels": [],
@@ -1624,7 +1620,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "kwatth"
+                "value": "watth"
               }
             ]
           },
@@ -1660,7 +1656,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "kwatth"
+                "value": "watth"
               }
             ]
           },
@@ -1684,7 +1680,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "kwatth"
+                "value": "watth"
               }
             ]
           }
@@ -1694,7 +1690,7 @@
         "h": 13,
         "w": 9,
         "x": 0,
-        "y": 41
+        "y": 35
       },
       "id": 9,
       "options": {
@@ -1709,7 +1705,7 @@
         },
         "series": [
           {
-            "name": "Under 10 km",
+            "name": "Under 10 miles",
             "pointColor": {
               "fixed": "dark-green"
             },
@@ -1722,7 +1718,7 @@
             "y": "consumption"
           },
           {
-            "name": "Over 20 km",
+            "name": "Over 20 miles",
             "pointColor": {
               "fixed": "dark-orange"
             },
@@ -1746,7 +1742,7 @@
           "format": "table",
           "hide": false,
           "rawQuery": true,
-          "rawSql": "SELECT \n  temperature, AVG(consumption) AS consumption\nFROM (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (100/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance BETWEEN 1 AND 10\n) S1 GROUP BY temperature ORDER BY temperature ASC\n",
+          "rawSql": "SELECT \n  temperature, AVG(consumption) AS consumption\nFROM (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance BETWEEN 1 AND 16\n) S1 GROUP BY temperature ORDER BY temperature ASC\n",
           "refId": "A",
           "sql": {
             "columns": [
@@ -1775,7 +1771,7 @@
           "format": "table",
           "hide": false,
           "rawQuery": true,
-          "rawSql": "SELECT \n  temperature AS temperature3, AVG(consumption) AS consumption3\nfrom (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (100/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance > 20 \n) S1 GROUP BY temperature ORDER BY temperature ASC",
+          "rawSql": "SELECT \n  temperature AS temperature3, AVG(consumption) AS consumption3\nfrom (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance > 32 \n) S1 GROUP BY temperature ORDER BY temperature ASC",
           "refId": "C",
           "sql": {
             "columns": [
@@ -1845,10 +1841,8 @@
               "mode": "off"
             }
           },
-          "decimals": 1,
+          "decimals": 0,
           "mappings": [],
-          "max": 35,
-          "min": -25,
           "noValue": "0",
           "thresholds": {
             "mode": "absolute",
@@ -1866,7 +1860,7 @@
               }
             ]
           },
-          "unit": "kwatth"
+          "unit": "watth"
         },
         "overrides": [
           {
@@ -1885,6 +1879,14 @@
               {
                 "id": "custom.lineWidth",
                 "value": 4
+              },
+              {
+                "id": "custom.axisSoftMax",
+                "value": 500
+              },
+              {
+                "id": "min",
+                "value": -375
               }
             ]
           },
@@ -1901,6 +1903,14 @@
               {
                 "id": "custom.axisPlacement",
                 "value": "right"
+              },
+              {
+                "id": "min",
+                "value": -30
+              },
+              {
+                "id": "max",
+                "value": 40
               }
             ]
           }
@@ -1910,7 +1920,7 @@
         "h": 13,
         "w": 15,
         "x": 9,
-        "y": 41
+        "y": 35
       },
       "id": 23,
       "options": {
@@ -1934,7 +1944,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "SELECT \n  start_date::date AS time,\n  consumption/(distance/100) AS consumption\nFROM (\n  SELECT \n    start_date,\n    SUM(distance*consumption/100) OVER(ORDER BY start_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS consumption,\n    SUM(distance) OVER(ORDER BY start_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS distance\n  FROM (\n    SELECT \n      start_date, SUM(distance) AS distance, \n      SUM(distance*consumption)/SUM(distance) AS consumption\n    FROM (\n      SELECT \n        TO_CHAR(start_date, 'YYYY-MM-DD') AS start_date,\n        (end_km-start_km) AS distance,\n        (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (100/distance)) AS consumption\n      FROM \n        drives JOIN cars ON drives.car_id = cars.id  WHERE drives.car_id = 1 \n    ) S1 WHERE consumption > 0 GROUP BY start_date ORDER BY start_date ASC\n  ) S2 GROUP BY start_date, distance, consumption ORDER BY start_date\n) S3 ORDER BY start_date",
+          "rawSql": "SELECT \n  start_date::date AS time,\n  consumption/(distance/100) AS consumption\nFROM (\n  SELECT \n    start_date,\n    SUM(distance*consumption/100) OVER(ORDER BY start_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS consumption,\n    SUM(distance) OVER(ORDER BY start_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS distance\n  FROM (\n    SELECT \n      start_date, SUM(distance) AS distance, \n      SUM(distance*consumption)/SUM(distance) AS consumption\n    FROM (\n      SELECT \n        TO_CHAR(start_date, 'YYYY-MM-DD') AS start_date,\n        (end_km-start_km) AS distance,\n        (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n      FROM \n        drives JOIN cars ON drives.car_id = cars.id  WHERE drives.car_id = 1 \n    ) S1 WHERE consumption > 0 GROUP BY start_date ORDER BY start_date ASC\n  ) S2 GROUP BY start_date, distance, consumption ORDER BY start_date\n) S3 ORDER BY start_date",
           "refId": "A",
           "sql": {
             "columns": [
@@ -2024,7 +2034,7 @@
         "h": 13,
         "w": 24,
         "x": 0,
-        "y": 54
+        "y": 48
       },
       "id": 25,
       "options": {
@@ -2049,7 +2059,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "WITH S3 AS (\n  SELECT \n    speed, temperature, COUNT(*) as samples,\n    ROUND(AVG((power/speed)*100), 1) AS consumption\n  FROM (\n    SELECT \n      ROUND(speed/($speed_step*1.0))*$speed_step AS speed,\n      ROUND(AVG(outside_temp/($temperature_step*1.0)) OVER(ORDER BY date ROWS BETWEEN 50 PRECEDING AND 50 FOLLOWING))*$temperature_step AS temperature,\n      power\n    FROM \n      positions WHERE car_id = $car_id and speed > 0 AND \n      (id%(100/$datapoints)::integer = 0 OR outside_temp IS NOT NULL) AND $__timeFilter(date)\n  ) S1 WHERE temperature IS NOT NULL AND speed > 0 GROUP BY temperature, speed\n)\n\nSELECT\n  speed, temperature, consumption, \n  (100*('$aux'::json -> 'CurrentCapacity')::text::float/consumption) as range, \n  ROUND(100*(samples*speed)/(select sum(speed*samples) from S3), 3) as distance_percentage,\n  ROUND((samples*speed)/(select sum(speed*samples) from S3 S4 WHERE S4.temperature = S3.temperature), 3) as at_temperature_percentage\nFROM S3 WHERE consumption != 0 AND speed > 0 AND samples > (200*($datapoints/100.0)) ORDER BY temperature DESC, speed ASC",
+          "rawSql": "WITH S3 AS (\n  SELECT \n    speed, temperature, COUNT(*) as samples,\n    ROUND(AVG((power/speed)*1000), 1) AS consumption\n  FROM (\n    SELECT \n      ROUND((speed/1.609)/$speed_step)*$speed_step AS speed,\n      ROUND(AVG(outside_temp/($temperature_step*1.0)) OVER(ORDER BY date ROWS BETWEEN 50 PRECEDING AND 50 FOLLOWING))*$temperature_step AS temperature,\n      power\n    FROM \n      positions WHERE car_id = $car_id and speed > 0 AND \n      (id%(100/$datapoints)::integer = 0 OR outside_temp IS NOT NULL) AND $__timeFilter(date)\n  ) S1 WHERE temperature IS NOT NULL AND speed > 0 GROUP BY temperature, speed\n)\n\nSELECT\n  speed, temperature, consumption, \n  (1000*('$aux'::json -> 'CurrentCapacity')::text::float/consumption) as range, \n  ROUND(100*(samples*speed)/(select sum(speed*samples) from S3), 3) as distance_percentage,\n  ROUND((samples*speed)/(select sum(speed*samples) from S3 S4 WHERE S4.temperature = S3.temperature), 3) as at_temperature_percentage\nFROM S3 WHERE consumption != 0 AND speed > 0 AND samples > (200*($datapoints/100.0)) ORDER BY temperature DESC, speed ASC",
           "refId": "A",
           "sql": {
             "columns": [
@@ -2188,11 +2198,6 @@
         "name": "speed_step",
         "options": [
           {
-            "selected": false,
-            "text": "20",
-            "value": "20"
-          },
-          {
             "selected": true,
             "text": "10",
             "value": "10"
@@ -2203,7 +2208,7 @@
             "value": "5"
           }
         ],
-        "query": "20, 10, 5",
+        "query": "10, 5",
         "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
@@ -2249,8 +2254,8 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Speed and temperature",
-  "uid": "d9fd88d7-d950-4892-8d03-c82fe7fb59e5",
-  "version": 34,
+  "title": "Speed and temperature (miles)",
+  "uid": "d9fd88d7-d950-4892-8d03-c82fe7fb59e9",
+  "version": 8,
   "weekStart": ""
 }
