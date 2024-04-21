@@ -1202,7 +1202,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "#5747ff"
+                "color": "#5747ff",
+                "value": null
               },
               {
                 "color": "#3a63fe",
@@ -1406,7 +1407,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           },
@@ -1553,7 +1555,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1656,7 +1659,7 @@
         },
         "series": [
           {
-            "name": "Under 10 km",
+            "name": "Under 10 miles",
             "pointColor": {
               "fixed": "dark-green"
             },
@@ -1669,15 +1672,7 @@
             "y": "consumption"
           },
           {
-            "name": "10 - 40 km",
-            "pointColor": {
-              "fixed": "yellow"
-            },
-            "x": "temperature2",
-            "y": "consumption2"
-          },
-          {
-            "name": "Over 40 km",
+            "name": "Over 20 miles",
             "pointColor": {
               "fixed": "dark-orange"
             },
@@ -1701,7 +1696,7 @@
           "format": "table",
           "hide": false,
           "rawQuery": true,
-          "rawSql": "SELECT \n  temperature, AVG(consumption) AS consumption\nFROM (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance BETWEEN 1 AND 10\n) S1 GROUP BY temperature ORDER BY temperature ASC\n",
+          "rawSql": "SELECT \n  temperature, AVG(consumption) AS consumption\nFROM (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance BETWEEN 1 AND 16\n) S1 GROUP BY temperature ORDER BY temperature ASC\n",
           "refId": "A",
           "sql": {
             "columns": [
@@ -1730,36 +1725,7 @@
           "format": "table",
           "hide": false,
           "rawQuery": true,
-          "rawSql": "SELECT \n  temperature AS temperature2, AVG(consumption) AS consumption2\nfrom (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance BETWEEN 10 AND 40\n) S1 GROUP BY temperature ORDER BY temperature ASC",
-          "refId": "B",
-          "sql": {
-            "columns": [
-              {
-                "parameters": [],
-                "type": "function"
-              }
-            ],
-            "groupBy": [
-              {
-                "property": {
-                  "type": "string"
-                },
-                "type": "groupBy"
-              }
-            ],
-            "limit": 50
-          }
-        },
-        {
-          "datasource": {
-            "type": "postgres",
-            "uid": "PC98BA2F4D77E1A42"
-          },
-          "editorMode": "code",
-          "format": "table",
-          "hide": false,
-          "rawQuery": true,
-          "rawSql": "SELECT \n  temperature AS temperature3, AVG(consumption) AS consumption3\nfrom (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance > 40 \n) S1 GROUP BY temperature ORDER BY temperature ASC",
+          "rawSql": "SELECT \n  temperature AS temperature3, AVG(consumption) AS consumption3\nfrom (\n  SELECT \n    ROUND(outside_temp_avg/($temperature_step*1.0)) * $temperature_step AS temperature, \n    (NULLIF(GREATEST(start_rated_range_km - end_rated_range_km, 0), 0)*cars.efficiency * (1.609*1000/distance)) AS consumption\n  FROM \n    drives JOIN cars ON drives.car_id = cars.id WHERE drives.car_id = $car_id AND distance > 32 \n) S1 GROUP BY temperature ORDER BY temperature ASC",
           "refId": "C",
           "sql": {
             "columns": [
@@ -1836,7 +1802,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "dark-blue"
+                "color": "dark-blue",
+                "value": null
               },
               {
                 "color": "#EAB839",
@@ -2007,7 +1974,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -2256,6 +2224,6 @@
   "timezone": "",
   "title": "Speed and temperature (miles)",
   "uid": "d9fd88d7-d950-4892-8d03-c82fe7fb59e9",
-  "version": 6,
+  "version": 8,
   "weekStart": ""
 }
