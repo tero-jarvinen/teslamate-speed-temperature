@@ -1,7 +1,11 @@
 # Speed and outside temperature related metrics for Teslamate
 Speed and temperature related dashboard for Teslamate. Separate dashboards for kilometers and miles, select the one you want to use.
 
-# Selectable attributes
+# Installation
+
+Download correct json file (km or miles). Go to Teslamate Grafana and select Dashboards. On dashboard views click New / Import and import the file you downloaded. Select folder and Teslamate datasource in import dialog.
+
+# Selectable dashboard attributes
 
  - Time range: Select time range for panel data 
  - Car_id: Select car if multiple cars owned
