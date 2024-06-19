@@ -12,7 +12,7 @@ Download correct json file (km or miles). Go to Teslamate Grafana and select Das
  - Used datapoints: percentage of position datapoints used for panel data. Higher percentage means slower performance but more accurate data.
  - Speed step: Speed step size for the panels
  - Temperature step: Temperature step size for the panels
-
+ - 
 # Dashboard screenshot
 
 ![Speed, temperature, consumption](https://github.com/tero-jarvinen/teslamate-speed-temperature/blob/main/images/speed-temperature-consumption.jpg?raw=true)
