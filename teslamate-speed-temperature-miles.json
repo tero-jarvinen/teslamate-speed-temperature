@@ -21,7 +21,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "10.4.0"
+      "version": "11.0.0"
     },
     {
       "type": "datasource",
@@ -124,7 +124,7 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "10.4.0",
+      "pluginVersion": "11.0.0",
       "targets": [
         {
           "datasource": {
@@ -352,7 +352,7 @@
           }
         ]
       },
-      "pluginVersion": "10.4.0",
+      "pluginVersion": "11.0.0",
       "targets": [
         {
           "datasource": {
@@ -365,6 +365,18 @@
       ],
       "title": "Consumption at speed and temperature",
       "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "temperature"
+              }
+            ]
+          }
+        },
         {
           "id": "groupingToMatrix",
           "options": {
@@ -572,7 +584,7 @@
           }
         ]
       },
-      "pluginVersion": "10.4.0",
+      "pluginVersion": "11.0.0",
       "targets": [
         {
           "datasource": {
@@ -585,6 +597,18 @@
       ],
       "title": "Range at speed and temperature",
       "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "temperature"
+              }
+            ]
+          }
+        },
         {
           "id": "groupingToMatrix",
           "options": {
@@ -804,7 +828,7 @@
           }
         ]
       },
-      "pluginVersion": "10.4.0",
+      "pluginVersion": "11.0.0",
       "targets": [
         {
           "datasource": {
@@ -817,6 +841,18 @@
       ],
       "title": "Percentage of distance driven at speed and temperature",
       "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "temperature"
+              }
+            ]
+          }
+        },
         {
           "id": "groupingToMatrix",
           "options": {
@@ -996,6 +1032,7 @@
           "valueSize": 23
         },
         "tooltip": {
+          "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         },
@@ -1224,6 +1261,7 @@
           "valueSize": 23
         },
         "tooltip": {
+          "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         },
@@ -1341,7 +1379,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "#5747ff"
+                "color": "#5747ff",
+                "value": null
               },
               {
                 "color": "#3a63fe",
@@ -1456,6 +1495,7 @@
           "valueSize": 23
         },
         "tooltip": {
+          "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         },
@@ -1546,7 +1586,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               }
             ]
           },
@@ -1605,6 +1646,7 @@
           "valueSize": 22
         },
         "tooltip": {
+          "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         },
@@ -1640,6 +1682,18 @@
                 "operation": "groupby"
               }
             }
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": false,
+                "field": "speed"
+              }
+            ]
           }
         }
       ],
@@ -1694,7 +1748,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1820,6 +1875,7 @@
         ],
         "seriesMapping": "manual",
         "tooltip": {
+          "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         }
@@ -1941,7 +1997,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "dark-blue"
+                "color": "dark-blue",
+                "value": null
               },
               {
                 "color": "#EAB839",
@@ -2024,6 +2081,7 @@
           "showLegend": true
         },
         "tooltip": {
+          "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         }
@@ -2260,10 +2318,11 @@
     "from": "now-1y",
     "to": "now"
   },
+  "timeRangeUpdatedDuringEditOrView": false,
   "timepicker": {},
   "timezone": "",
   "title": "Speed and temperature (miles)",
-  "uid": "d9fd88d7-d950-4892-8d03-c82fe7fb59e9",
-  "version": 11,
+  "uid": "d9fd88d7-d950-4892-8d03-c82fe7fb59",
+  "version": 3,
   "weekStart": ""
 }
